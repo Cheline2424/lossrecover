@@ -32,13 +32,14 @@
         }
 
         .container {
-            max-width: 600px;
+            max-width: 700px;
             width: 100%;
             padding: 40px 20px;
             border-radius: 15px;
             background: rgba(25, 25, 25, 0.4);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
+            animation: fadeIn 1s ease-out;
         }
 
         .logo-container {
@@ -47,9 +48,9 @@
 
         .cta-button {
             display: inline-block;
-            padding: 15px 30px;
-            margin-top: 20px;
-            font-size: 1.2em;
+            padding: 18px 40px; /* Ukuran tombol diperbesar */
+            margin-top: 30px;
+            font-size: 1.4em; /* Ukuran font tombol diperbesar */
             font-weight: bold;
             text-decoration: none;
             color: #000;
@@ -58,6 +59,7 @@
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
             text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .cta-button:hover {
@@ -66,28 +68,63 @@
             background-color: #fffacd;
         }
 
+        h1 {
+            font-size: 2.5em; /* Ukuran h1 diperbesar */
+            font-weight: 800; /* Dibuat lebih tebal */
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em; /* Ukuran paragraf diperbesar */
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .limited-offer {
+            font-size: 1.4em;
+        }
+
         /* Responsive adjustments */
         @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1.1em;
+            }
             .cta-button {
-                font-size: 1em;
-                padding: 12px 25px;
+                font-size: 1.2em;
+                padding: 15px 30px;
+            }
+        }
+
+        /* Keyframes for animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Logo Section - now using an image -->
+        <!-- Logo Section - now with a larger size -->
         <div class="logo-container">
-            <!-- PENTING: Nama file logo sekarang adalah 'logo-recover.jpg'. -->
-            <!-- Pastikan file logo Anda berada di folder yang sama dengan file HTML ini. -->
-            <img src="logo-recover.jpg" alt="Recover Loss Logo" class="mx-auto" style="width: auto; height: 120px; margin-bottom: 20px;">
+            <!-- PENTING: Ukuran logo telah diubah menjadi 250px. -->
+            <!-- Pastikan file logo Anda ('logo-recover.jpg') berada di folder yang sama dengan file HTML ini. -->
+            <img src="logo-recover.jpg" alt="Recover Loss Logo" class="mx-auto" style="width: auto; height: 250px; margin-bottom: 20px;">
         </div>
 
-        <h1>READY TO MAKE SOME CASH, YAAR?</h1>
+        <h1>READY TO MAKE SOME SERIOUS CASH, YAAR?</h1>
 
         <p>
-            Get ready for some serious winning! Join our BHT CLUB CHANNEL for mind-blowing predictions, exclusive bonuses, and the ultimate thrill. This is a 100% SURE SHOT to turn your game around and make a *pukka* profit! Don't miss out, bro.
+            Dost, get ready for some serious winning! Join our exclusive VVIP channel for mind-blowing predictions, special bonuses, and the ultimate thrill. This is a 100% SURE SHOT to turn your game around and make a *pukka* profit! Don't miss this, it's a real *dhamaka*, bhai!
         </p>
 
         <p class="limited-offer">
