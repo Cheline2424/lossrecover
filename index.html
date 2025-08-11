@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recover Loss VVIP</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        /* Custom styles from the original code */
         :root {
-            --primary-color: #ffd700; /* Gold-like color for buttons and highlights */
-            --accent-color: #32cd32; /* Lime green for the checkmark */
+            --primary-color: #ffd700;
+            --accent-color: #32cd32;
             --text-color: #ffffff;
-            --background-color: #1a0f26; /* Dark purple from the reference image */
+            --background-color: #1a0f26;
             --gradient-start: #1a0f26;
             --gradient-end: #3b2c50;
         }
@@ -17,7 +20,7 @@
         body {
             background: linear-gradient(180deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
             color: var(--text-color);
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -28,7 +31,7 @@
             box-sizing: border-box;
         }
 
-       .container {
+        .container {
             max-width: 600px;
             width: 100%;
             padding: 40px 20px;
@@ -38,61 +41,11 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-       .logo-container {
+        .logo-container {
             margin-bottom: 20px;
         }
 
-       .logo-text {
-            font-family: 'Impact', 'Arial Black', sans-serif;
-            font-size: 3em;
-            line-height: 0.9em;
-            color: #fff;
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-            text-transform: uppercase;
-            position: relative;
-            display: inline-block;
-            white-space: nowrap;
-        }
-
-       .logo-text::after {
-            content: "✓";
-            font-size: 2em;
-            color: var(--accent-color);
-            position: absolute;
-            right: -45px;
-            bottom: -5px;
-            text-shadow: 0 0 15px var(--accent-color);
-        }
-
-        h1 {
-            font-size: 2em;
-            margin-top: 0;
-            color: var(--primary-color);
-            text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
-            text-transform: uppercase;
-        }
-
-        p {
-            font-size: 1.1em;
-            line-height: 1.6;
-            margin-bottom: 20px;
-            color: #f0f0f0;
-        }
-        
-        em {
-            font-style: normal;
-            font-weight: bold;
-            color: var(--primary-color);
-        }
-
-       .limited-offer {
-            font-weight: bold;
-            color: #e6b800; /* A slightly different shade of yellow */
-            font-size: 1.2em;
-            animation: pulse 1.5s infinite;
-        }
-
-       .cta-button {
+        .cta-button {
             display: inline-block;
             padding: 15px 30px;
             margin-top: 20px;
@@ -107,51 +60,28 @@
             text-transform: uppercase;
         }
 
-       .cta-button:hover {
+        .cta-button:hover {
             transform: scale(1.05);
             box-shadow: 0 8px 25px rgba(255, 215, 0, 0.6);
             background-color: #fffacd;
         }
 
-        /* Media queries for responsiveness */
+        /* Responsive adjustments */
         @media (max-width: 768px) {
-           .logo-text {
-                font-size: 2.2em;
-            }
-           .logo-text::after {
-                font-size: 1.5em;
-                right: -30px;
-                bottom: -5px;
-            }
-            h1 {
-                font-size: 1.5em;
-            }
-           .cta-button {
+            .cta-button {
                 font-size: 1em;
                 padding: 12px 25px;
-            }
-        }
-
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
-                opacity: 1;
-            }
-            50% {
-                transform: scale(1.05);
-                opacity: 0.9;
-            }
-            100% {
-                transform: scale(1);
-                opacity: 1;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Logo Section - now using an image -->
         <div class="logo-container">
-            <div class="logo-text">RECOVER<br>LOSS</div>
+            <!-- PENTING: Nama file logo sekarang adalah 'logo-recover.jpg'. -->
+            <!-- Pastikan file logo Anda berada di folder yang sama dengan file HTML ini. -->
+            <img src="logo-recover.jpg" alt="Recover Loss Logo" class="mx-auto" style="width: auto; height: 120px; margin-bottom: 20px;">
         </div>
 
         <h1>READY TO MAKE SOME CASH, YAAR?</h1>
